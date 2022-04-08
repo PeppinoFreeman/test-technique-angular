@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { EMPTY, Observable } from "rxjs";
 import { GenerationConfig } from "../generation-config";
 import { Person } from "../person";
