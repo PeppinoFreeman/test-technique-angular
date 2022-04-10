@@ -4,17 +4,14 @@ import { PersonGeneratorComponent } from "./person-generator/person-generator.co
 import { PersonListComponent } from "./person-list/person-list.component";
 
 const routes: Routes = [
-	{
-		path: "",
-		component: PersonListComponent
-	}
+  {
+    path: "",
+    component: PersonListComponent,
+  },
 ];
 
 @NgModule({
-	imports: [
-		RouterModule.forChild(routes)
-	],
-	exports: [RouterModule]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class PersonRoutingModule {
-}
+export class PersonRoutingModule {}
