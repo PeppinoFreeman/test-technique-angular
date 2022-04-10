@@ -16,9 +16,9 @@ export class TranslatePipe implements PipeTransform {
     }
     // Check if language is valid
     if (!Object.values(TranslationLang).includes(language)) {
-      return translatedContent[TranslationLang.FR][data];
+      return translatedContent[TranslationLang.FR][data.toUpperCase()];
     }
 
-    return translatedContent[language][data];
+    return translatedContent[language][data.toUpperCase()];
   }
 }
