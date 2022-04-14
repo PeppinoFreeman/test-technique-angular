@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnDestroy, OnInit } from "@angular/core";
 import { Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
 import { GenerationConfig } from "../generation-config";
@@ -10,7 +10,7 @@ import { PersonService } from "../person.service";
   templateUrl: "./person-list.component.html",
   styleUrls: ["./person-list.component.scss"],
 })
-export class PersonListComponent {
+export class PersonListComponent implements OnInit, OnDestroy {
   displayedColumns: string[] = [
     "id",
     "firstName",

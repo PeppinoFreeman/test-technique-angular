@@ -54,7 +54,7 @@ describe("PersonGeneratorComponent", () => {
     // COUNT //
     const mockFormInput = mockForm.query(By.css("input")).nativeElement;
     // check initial value
-    expect(parseInt(mockFormInput.value)).toEqual(1000);
+    expect(parseInt(mockFormInput.value, 10)).toEqual(1000);
     mockFormInput.value = 500;
     mockFormInput.dispatchEvent(new Event("input"));
     // check update value
